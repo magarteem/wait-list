@@ -1,0 +1,18 @@
+@import "src/shared/styles/variable";
+
+html,
+body {
+  height: 100%;
+  font-family: $font_Manrope, system, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: $background;
+  color: $white;
+
+  .gridMainLayout {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 260px minmax(0, 1fr);
+    //grid-template-columns: 260px calc(100% - 260px);
+  }
+}

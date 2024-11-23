@@ -1,0 +1,119 @@
+@import "src/shared/styles/variable";
+
+.sidBarMenu {
+  height: 100%;
+  border-right: 1px solid rgba(157, 157, 157, 0.2);
+  padding: 24px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  .logo {
+    height: 24px;
+  }
+  .menu {
+    flex: 0 1 100%;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      row-gap: 12px;
+      li {
+        display: flex;
+        column-gap: 12px;
+        align-items: center;
+        height: 40px;
+        padding: 10px 12px 10px 12px;
+        border-radius: 12px;
+        font-size: 14px;
+        font-weight: 400;
+
+        svg {
+          path {
+            fill: #ffffffb3;
+          }
+        }
+
+        &:hover,
+        .active {
+          cursor: pointer;
+          background-color: $background-hover;
+          a {
+            color: $white;
+            font-weight: 600;
+          }
+
+          svg {
+            path {
+              fill: $white;
+            }
+          }
+        }
+        a {
+          color: $white_700;
+        }
+      }
+
+      li:has(.active) {
+        cursor: pointer;
+        background-color: $background-hover;
+        a {
+          color: $white;
+          font-weight: 600;
+        }
+
+        svg {
+          path {
+            fill: $white;
+          }
+        }
+      }
+    }
+  }
+  .buttonDownloadApps {
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 46px;
+      border: 1px solid $grey_200;
+      border-radius: 8px;
+
+      .iconWrapp {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 22px;
+        height: 22px;
+
+        svg {
+          path {
+            fill: #5a5a5a;
+          }
+        }
+      }
+      span {
+        padding-left: 8px;
+        color: #5a5a5a;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+      }
+    }
+  }
+  .socialLink {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    a {
+      cursor: pointer;
+      height: 20px;
+    }
+  }
+}

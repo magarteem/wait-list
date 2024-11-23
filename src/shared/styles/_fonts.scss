@@ -1,0 +1,8 @@
+$font_Manrope: "Manrope";
+
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"),
+    url(../assets/fonts/Manrope-VariableFont_wght.ttf) format("truetype");
+  font-display: fallback;
+}

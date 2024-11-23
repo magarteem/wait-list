@@ -1,0 +1,106 @@
+@import "src/shared/styles/variable";
+
+.blockEvents {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .titleQuests {
+    font-weight: 600;
+  }
+
+  .blockEventsSwiper {
+    width: 100%;
+    overflow: hidden;
+    gap: 12px;
+    width: 100%;
+
+    .customContainer {
+      width: 282px !important;
+      height: 168px;
+    }
+  }
+
+  .btnNavigation {
+    display: flex;
+    gap: 6px;
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 25px;
+      line-height: 25;
+      font-weight: 900;
+      width: 40px;
+      height: 40px;
+      border-radius: 9999px;
+      box-shadow: inset 0px -1px 1px 0px rgba(20, 20, 20, 0.11),
+        0px 0px 1px 0px rgba(20, 20, 20, 0.08),
+        0px 1px 1px 0px rgba(20, 20, 20, 0.07),
+        0px 3px 2px 0px rgba(20, 20, 20, 0.04),
+        0px 5px 2px 0px rgba(20, 20, 20, 0.01);
+      background: rgba(44, 44, 44, 0.92);
+
+      &:disabled {
+        svg {
+          path {
+            fill: #8a8a8a;
+          }
+        }
+      }
+    }
+
+    .btnPrev {
+      @extend .btn;
+    }
+    .btnPrev,
+    .btnNext {
+      @extend .btn;
+    }
+  }
+}
+
+.blockAllEvents {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  flex: 1 0 100%;
+
+  .tabsAllQuests {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+
+    .customClassName {
+      font-size: 14px !important;
+      font-weight: 600;
+      padding: 4px 8px;
+      border-radius: 20px;
+      height: 28px;
+    }
+    .customClassNameSocial {
+      padding: 4px 8px;
+    }
+  }
+
+  .blockAllEventsCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    .customEventsCard {
+      width: 368px;
+    }
+  }
+}
+
+.socialQuestsNumber {
+  color: $yellow_1000;
+  padding-left: 10px;
+}
+
+//============================
+.completed {
+  background: $white_200;
+}

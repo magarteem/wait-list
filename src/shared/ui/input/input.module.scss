@@ -1,0 +1,50 @@
+@import "src/shared/styles/variable";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  position: relative;
+
+  .inputText {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  input {
+    @extend .inputText;
+    color: $white;
+    background: $white_100;
+    border: 0.5px solid $white;
+    border-radius: 12px;
+    height: 40px;
+    padding: 0 16px;
+
+    &:focus {
+    }
+    &:hover {
+    }
+  }
+
+  input:-webkit-autofill {
+    //-webkit-text-fill-color: $background !important;
+  }
+
+  input::placeholder {
+    //@extend .inputText;
+  }
+}
+
+.errorText {
+  input {
+    border: 1px solid $error !important;
+  }
+
+  .error {
+    position: absolute;
+    bottom: -20px;
+    font-size: 0.625rem;
+    color: $error;
+  }
+}

@@ -1,0 +1,25 @@
+@import "src/shared/styles/variable";
+.socialQuestsLayout {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .title {
+    color: $white;
+    font-weight: 600;
+  }
+  .completed {
+    color: $white_700;
+  }
+
+  .textContent {
+    font-size: 14px;
+    color: $white_500;
+  }
+
+  .xpBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
