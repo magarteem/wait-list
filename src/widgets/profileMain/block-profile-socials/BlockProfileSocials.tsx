@@ -38,7 +38,7 @@ export const BlockProfileSocials = ({ socialsProfile }: Props) => {
               <XpButton
                 completed={x.completed}
                 xp={x.xp}
-                //classNameContainer={s.customXpCounts}
+                classNameContainer={s.customXpCounts}
               />
             </div>
 

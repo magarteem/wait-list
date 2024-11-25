@@ -19,7 +19,7 @@
       flex-direction: column;
       gap: 24px;
       width: 361px;
-      padding: 24px;
+      padding: 18px 24px 24px;
 
       .socialsHeader {
         display: flex;
@@ -33,6 +33,10 @@
             font-size: 16px;
             font-weight: 600;
           }
+        }
+
+        .customXpCounts {
+          height: 32px;
         }
       }
 

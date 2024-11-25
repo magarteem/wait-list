@@ -38,6 +38,7 @@ export const ProfileMain = () => {
           <div>
             <XpButton
               completed={false}
+              typeIcon="referral"
               xp={0}
               showXpText={false}
               classNameContainer={s.customXpCounts}

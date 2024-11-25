@@ -1,5 +1,5 @@
-import React from "react";
+import { LeaderboardMain } from "../widgets/leaderboardMain/LeaderboardMain";
 
 export const Leaderboard = () => {
-  return <div>Leaderboard</div>;
+  return <LeaderboardMain />;
 };
