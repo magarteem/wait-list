@@ -1,0 +1,52 @@
+@import "src/shared/styles/variable";
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  flex: 1 0 100%;
+
+  .titleSocials {
+  }
+
+  .socialsCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    .customSocialsCard {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      width: 361px;
+      padding: 24px;
+
+      .socialsHeader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .socialsType {
+          display: flex;
+          column-gap: 12px;
+          .socialsName {
+            font-size: 16px;
+            font-weight: 600;
+          }
+        }
+      }
+
+      .socialsBtn {
+        width: 100%;
+      }
+    }
+  }
+}
+
+//============================
+.completed {
+  background: $white_200;
+}
+.completedText {
+  color: $white_700;
+}

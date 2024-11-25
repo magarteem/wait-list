@@ -8,7 +8,7 @@ type ButtonTypes = "primary" | "second" | "completed" | "dark";
 type Props = {
   btnTypeStyle?: ButtonTypes;
   children?: ReactNode;
-  size?: "sm" | "large";
+  size?: "sm" | "large" | "fullWidth";
   icon?: ReactNode;
 } & ComponentPropsWithoutRef<"button">;
 
@@ -43,6 +43,7 @@ export const Button = ({
       className={classNames(
         typeButtonClass,
         { [styles.large]: size === "large" },
+        { [styles.fullWidth]: size === "fullWidth" },
         className
       )}
       {...props}

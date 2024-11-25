@@ -1,0 +1,31 @@
+@import "src/shared/styles/variable";
+
+.progress {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+
+  .progressInput {
+    width: 100%;
+    height: 8px;
+  }
+
+  .progressLabel {
+    align-self: flex-end;
+    .maxXpInfo {
+      color: $white_700;
+    }
+  }
+
+  progress[value]::-webkit-progress-bar {
+    background-color: $white_100;
+    border-radius: 99px;
+  }
+
+  progress[value]::-webkit-progress-value {
+    background-color: $yellow_1000;
+    border-radius: 99px;
+  }
+}

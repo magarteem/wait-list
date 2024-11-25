@@ -1,0 +1,34 @@
+.blockProfileInfo {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+
+  .editBtnWrap {
+    display: flex;
+    column-gap: 12px;
+
+    .editBtn {
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+
+  .avatarImg {
+    margin-top: 16px;
+    width: 64px;
+    height: 64px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .name {
+    margin-top: 16px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+}

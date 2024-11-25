@@ -8,6 +8,7 @@ interface Props {
   completed: boolean;
   typeIcon?: "xp" | "referral";
   showXpText?: boolean;
+  classNameContainer?: string;
 }
 
 export const XpButton = ({
@@ -15,9 +16,12 @@ export const XpButton = ({
   completed,
   typeIcon = "xp",
   showXpText = true,
+  classNameContainer,
 }: Props) => {
   return (
-    <div className={cn(s.xpBtn, { [s.completed]: completed })}>
+    <div
+      className={cn(s.xpBtn, { [s.completed]: completed }, classNameContainer)}
+    >
       <img
         src={typeIcon === "xp" ? XP : ReferralIcon}
         alt="xp"
